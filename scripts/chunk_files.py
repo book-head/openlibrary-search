@@ -49,7 +49,7 @@ for file_identifer in file_identifers:
     filenames = []
     csvoutputfile = None
 
-    with open(os.path.join(input_path, ('ol_dump_' + file_identifer + '.txt')))as cvsinputfile:
+    with open(os.path.join(input_path, (file_identifer + '.txt')))as cvsinputfile:
         csvreader = csv.reader(cvsinputfile, delimiter='\t') # CREATE READER
         for lineno, row in enumerate(csvreader):
 
